@@ -15,7 +15,8 @@ Variáveis para cores:
 }
 
 header {
-    background-color: #131315;
+    background-color: var(--fundo-principal);
+    height:70px;
 }
 
 nav#menu ul {
@@ -30,8 +31,13 @@ nav#menu li {
 
 nav#menu a{
     text-decoration: none;
-    color: white;
+    color: #8f8888f2;
     font-weight: bold;
+    transition: 0.5s;
+}
+
+nav#menu a:hover{
+    color: white;
 }
 
 body {
