@@ -1,0 +1,40 @@
+/*
+Variáveis para cores:
+--fundo principal: #131315
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --fundo-principal: #131315;
+    --texto: #ffffff;
+}
+
+header {
+    background-color: #131315;
+}
+
+nav#menu ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav#menu li {
+    margin: 20px;
+}
+
+nav#menu a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+body {
+    background-color: var(--fundo-principal);
+    font-family: Arial, Helvetica, sans-serif;
+}
