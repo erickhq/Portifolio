@@ -14,6 +14,8 @@ Variáveis para cores:
     --texto: #ffffff;
 }
 
+/*---------------------- MENU ----------------------*/
+
 header {
     background-color: var(--fundo-principal);
     height:70px;
@@ -40,7 +42,18 @@ nav#menu a:hover{
     color: white;
 }
 
+/*---------------------- INÍCIO ----------------------*/
+
 body {
     background-color: var(--fundo-principal);
     font-family: Arial, Helvetica, sans-serif;
+}
+
+section#ficha {
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    color: var(--texto);
 }
