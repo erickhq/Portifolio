@@ -1,8 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Mohave:ital,wght@0,300..700;1,300..700&display=swap');
-/*
-Variáveis para cores:
---fundo principal: #131315
-*/
+
 
 * {
     margin: 0;
@@ -58,18 +54,18 @@ body {
     max-width: 1200px;   /* LIMITE DE LARGURA */
     margin: 0 auto;      /* CENTRALIZA */
 
-    height: 100vh;
+    height: 70vh;
     padding: 0 40px;
 }
 
-#hero-name{
+.hero-name{
     display: flex;
     flex-direction: column;
     gap: 20px;
     color: var(--texto);
 }
 
-#hero-name h1 {
+.hero-name h1 {
     font-size: 14px;
     letter-spacing: 2px;
     line-height: 1.8;
@@ -77,13 +73,36 @@ body {
     text-transform: uppercase;
 }
 
-#hero-text {
-    max-width: 800px;
+.hero-text {
+    max-width: 900px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-#hero-text h2 {
+.hero-text h2 {
     font-size: 80px;
     font-weight: 800;
     line-height: 1.1;
     color: #d9d9d9;
+}
+
+.hero-text button {
+    margin-top: 40px;
+    padding: 14px 28px;
+
+    font-family: 'Inter', Arial, sans-serif;
+    background-color: var(--fundo-principal);
+    color: var(--texto);
+    padding: 15px;
+    border-radius: 10px;
+    border: solid white;
+    border-width: 2px 2px 7px 8px;
+    
+
+
+}
+
+.hero-text button:hover {
+    cursor: pointer;
+    border-width: 6px 5px 4px 4px  ;
+    transition: 0.2s;
 }
