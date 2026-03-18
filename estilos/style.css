@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Mohave:ital,wght@0,300..700;1,300..700&display=swap');
 /*
 Variáveis para cores:
 --fundo principal: #131315
@@ -46,14 +47,43 @@ nav#menu a:hover{
 
 body {
     background-color: var(--fundo-principal);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Inter', Arial, sans-serif;
 }
 
-section#ficha {
+#hero {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+
+    max-width: 1200px;   /* LIMITE DE LARGURA */
+    margin: 0 auto;      /* CENTRALIZA */
+
+    height: 100vh;
+    padding: 0 40px;
 }
 
-h1 {
+#hero-name{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     color: var(--texto);
+}
+
+#hero-name h1 {
+    font-size: 14px;
+    letter-spacing: 2px;
+    line-height: 1.8;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+#hero-text {
+    max-width: 800px;
+}
+
+#hero-text h2 {
+    font-size: 80px;
+    font-weight: 800;
+    line-height: 1.1;
+    color: #d9d9d9;
 }
