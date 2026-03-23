@@ -16,6 +16,7 @@
 header {
     background-color: var(--fundo-principal);
     height:70px;
+    margin-top: 20px;
 }
 
 nav#menu ul {
@@ -46,7 +47,7 @@ body {
     font-family: 'Inter', Arial, sans-serif;
 }
 
-#hero {
+.hero {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -103,4 +104,49 @@ body {
 .hero-text button:active {
   box-shadow: none;
   transform: translate(-3px, 3px);
+}
+
+
+
+
+
+
+
+
+/*---------------------- Projetos ----------------------*/
+
+.projetos{
+    max-width: 2000px;
+    min-width: 1500px;
+}
+
+.carrosel {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 1.2rem;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+}
+
+.card{
+    background: linear-gradient(rgb(56, 30, 148), rgb(126, 29, 150));
+    min-height: 350px;
+    min-width: 450px;
+    scroll-snap-align: center;
+    border-radius: 40px;
+}
+
+
+.carrousel{
+    margin: 100px auto;
+    width: 90%;
+    border: 5px solid red;
+}
+
+.carta{
+    height: 5em;
+    padding: 1em;
+    background: rgb(46, 118, 160);
 }
